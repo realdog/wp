@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
+<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../../bootstrap/js/bootstrap.min.js"></script>
+<style>
+	.container{
+		margin:20px 0 0 40px;
+	}
+	.container .row{
+		width: 700px;
+	}
+	.list{
+		max-width: 350px;
+		padding: 15px 0;
+		margin: 0 auto;
+		margin-top: 100px;
+	}
+	.menu{
+		color: #40A61A;
+	}
+	h4{
+		margin: 0px;
+		padding-top: 15px;
+	}
+	#enter{
+		margin:20px 0 0 20px;
+	}
+	.item-outer{
+		display:inline-block;
+		zoom: 1;
+		*display:inline;
+		color: white;
+		margin: 10px;
+		font-size: 20px;
+		background: url('../../image/admin/selected.png') no-repeat 50% 50%;
+		font-weight: bold;
+	}
+	.wrap{
+		*position: relative; 
+		display:table; 
+		width: 146px;
+		height: 146px;
+		background-color: #5fc23b;
+	}
+	.wrap:hover{
+		cursor: pointer;
+		filter:alpha(opacity=50);   
+    	opacity: 0.5; 
+	}
+	.subwrap{
+		vertical-align:middle; 
+		display:table-cell; 
+		width: 100%;
+		*position:absolute; 
+		*top:50%; 					
+	}
+	.item{
+		*position:relative; 
+		*top:-50%; 
+		text-align: center;
+	}
+	.tip{
+		font-size: 18px;
+		font-family: 微软雅黑;
+		margin-left: 10px;
+	}
+</style>
+<title>欢迎</title>
+<script>
+$(function(){
+	$(".nav-list").delegate("li.item" , "click" , function(){
+		$(".item").removeClass("active");
+		$(this).addClass("active");
+	});
+	
+	$(".item-outer").click(function(){
+		location.href = "/admin/shoper/add-activity.html?type=1&wuid="+$(this).attr("data-id");
+	});
+});
+</script>
+</head>
+<body>	
+ 	<div class="container">
+ 		
+		   	
+		    
+		    	
+			    	
+				    	<script>location.href="add-activity.html"</script>
+		 			
+		 			
+		 		
+		     
+		
+ 	</div>
+</body>
+</html>
